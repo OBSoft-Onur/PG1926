@@ -1,0 +1,34 @@
+<ion-modal-view>
+  <ion-header-bar>
+    <h1 class="title">Login</h1>
+    <div class="buttons">
+      <button class="button button-clear" ng-click="closeLogin()">Close</button>
+    </div>
+  </ion-header-bar>
+  <ion-content>
+    <form ng-submit="doLogin()">
+      <div class="list">
+        <label class="item item-input">
+          <span class="input-label">Kullanıcı Adı</span>
+          <input type="text" ng-model="loginData.username"  placeholder="Ör: @örnek">
+        </label>
+
+        <label class="item item-input">
+          <span class="input-label">Şifre</span>
+          <input type="password" ng-model="loginData.password"  placeholder="Ör: asr25931+-/*?_ABC">
+        </label>
+
+        <label class="item">
+          <button class="button button-block button-positive" type="submit">Giriş Yap</button>
+        </label>
+      </div>
+    </form>
+    <form>
+      <div class="list">
+        <label class="item">
+          <button class="button button-block button-positive" ng-click="gosignUp()">Kaydol</button>
+        </label>
+      </div>
+    </form>
+  </ion-content>
+</ion-modal-view>

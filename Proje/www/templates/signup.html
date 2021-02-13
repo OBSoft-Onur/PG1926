@@ -1,0 +1,41 @@
+<ion-modal-view>
+  <ion-header-bar>
+    <h1 class="title">Kaydol</h1>
+    <div class="buttons">
+      <a class="button icon-left ion-chevron-left button-clear button-dark" ng-click="backToLogin()">Back</a>
+    </div>
+  </ion-header-bar>
+  <ion-content>
+    <form ng-submit="doSignUp()">
+      <div class="list">
+        <label class="item item-input">
+          <span class="input-label">İsim</span>
+          <input type="text" ng-model="signUpData.fname">
+        </label>
+        <label class="item item-input">
+          <span class="input-label">Soyisim</span>
+          <input type="text" ng-model="signUpData.lname">
+        </label>
+        <label class="item item-input">
+          <span class="input-label">Telefon</span>
+          <input type="text" ng-model="signUpData.phone">
+        </label>
+        <label class="item item-input">
+          <span class="input-label">Şifre</span>
+          <input type="password" ng-model="signUpData.pass">
+        </label>
+        <label class="item item-input">
+          <span class="input-label">Şifre Tekrar</span>
+          <input type="password" ng-model="signUpData.passRepeat">
+        </label>
+
+        <label class="item">
+          <button class="button button-block button-positive" type="submit">Kaydol</button>
+        </label>
+      </div>
+    </form>
+    <div >
+
+    </div>
+  </ion-content>
+</ion-modal-view>
